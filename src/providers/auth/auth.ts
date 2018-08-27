@@ -124,7 +124,7 @@ export class AuthProvider {
             let headers = new Headers();
             headers.append('Authorization', 'Bearer ' + this.token);
  
-            this.http.get('http://localhost:3000/auth/isAuthenticated', {headers: headers})
+            this.http.get('https://apptd.herokuapp.com/auth/isAuthenticated', {headers: headers})
                 .subscribe(res => {
                     resolve(res);
                 }, (err) => {
@@ -144,7 +144,7 @@ export class AuthProvider {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
  
-        this.http.post('http://localhost:3000/auth/signup', JSON.stringify(details), {headers: headers})
+        this.http.post('https://apptd.herokuapp.com/auth/signup', JSON.stringify(details), {headers: headers})
           .subscribe(res => {
  
             let data = res.json();
@@ -167,7 +167,7 @@ export class AuthProvider {
         let headers = new Headers();
         headers.append('Content-Type', 'application/json');
  
-        this.http.post('http://localhost:3000/auth/signin', JSON.stringify(credentials), {headers: headers})
+        this.http.post('https://apptd.herokuapp.com/auth/signin', JSON.stringify(credentials), {headers: headers})
           .subscribe(res => {
  
             let data = res.json();

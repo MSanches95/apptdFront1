@@ -479,7 +479,7 @@ var AuthProvider = /** @class */ (function () {
                 _this.token = value;
                 var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
                 headers.append('Authorization', 'Bearer ' + _this.token);
-                _this.http.get('http://localhost:3000/auth/isAuthenticated', { headers: headers })
+                _this.http.get('https://apptd.herokuapp.com/auth/isAuthenticated', { headers: headers })
                     .subscribe(function (res) {
                     resolve(res);
                 }, function (err) {
@@ -493,7 +493,7 @@ var AuthProvider = /** @class */ (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://localhost:3000/auth/signup', JSON.stringify(details), { headers: headers })
+            _this.http.post('https://apptd.herokuapp.com/auth/signup', JSON.stringify(details), { headers: headers })
                 .subscribe(function (res) {
                 var data = res.json();
                 _this.token = data.token;
@@ -509,7 +509,7 @@ var AuthProvider = /** @class */ (function () {
         return new Promise(function (resolve, reject) {
             var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["a" /* Headers */]();
             headers.append('Content-Type', 'application/json');
-            _this.http.post('http://localhost:3000/auth/signin', JSON.stringify(credentials), { headers: headers })
+            _this.http.post('https://apptd.herokuapp.com/auth/signin', JSON.stringify(credentials), { headers: headers })
                 .subscribe(function (res) {
                 var data = res.json();
                 _this.token = data.token;
@@ -526,9 +526,10 @@ var AuthProvider = /** @class */ (function () {
     };
     AuthProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _b || Object])
     ], AuthProvider);
     return AuthProvider;
+    var _a, _b;
 }());
 
 //# sourceMappingURL=auth.js.map
