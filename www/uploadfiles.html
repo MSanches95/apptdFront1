@@ -1,52 +1,104 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-  <script data-ionic="inject">
-    (function(w){var i=w.Ionic=w.Ionic||{};i.version='3.9.2';i.angular='5.2.11';i.staticDir='build/';})(window);
-  </script>
-  <meta charset="UTF-8">
-  <title>Ionic App</title>
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="format-detection" content="telephone=no">
-  <meta name="msapplication-tap-highlight" content="no">
-
-  <link rel="icon" type="image/x-icon" href="assets/icon/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4e8ef7">
-
-  <!-- add to homescreen for ios -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-  <!-- cordova.js required for cordova apps (remove if not needed) -->
-  <script src="cordova.js"></script>
-
-  <!-- un-comment this code to enable service worker
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(() => console.log('service worker installed'))
-        .catch(err => console.error('Error', err));
-    }
-  </script>-->
-
-  <link href="build/main.css" rel="stylesheet">
-
-</head>
-<body>
-
-  <!-- Ionic's root component and where the app will load -->
-  <ion-app></ion-app>
-
-  <!-- The polyfills js is generated during the build process -->
-  <script src="build/polyfills.js"></script>
-
-  <!-- The vendor js is generated during the build process
-       It contains all of the dependencies in node_modules -->
-  <script src="build/vendor.js"></script>
-
-  <!-- The main bundle js is generated during the build process -->
-  <script src="build/main.js"></script>
-
-</body>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>the background remover</title>
+        <link rel="stylesheet" href="../stylesheets/imgncss_session.css">
+        <link rel="stylesheet" href="../stylesheets/dropzone.css">
+        <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
+        <script src="../js/google.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+        <script type="text/javascript" src="../js/dropzone.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/uploadimages.js"></script>
+    </head>
+    <body>
+        <header class="bienvenida">
+            <ul>
+                <li>Hola <a id="user" class="bold"><%= user.userlongname %></a><a class="bold">!</a></li>
+                <li>Órdenes en Proceso <a id="orders" class="bold"><%= countorders %></a></li>
+                <li><a id="salir" class="bold" href="/logout">Salir</a></li>
+            </ul>
+        </header>
+        <section id="menuver">
+            <nav>
+                <ul>
+                    <li class="menulogo"><h1><a href="/principal"><img src="../images/logo_black.png" alt="logo"></a></h1></li>
+                    <li><a href="/micuenta">Mi Cuenta</a></li>
+                    <li><a href="/historial">Historial</a></li>
+                    <li><a href="/especificaciones1">Especificaciones</a></li>
+                    <li><a href="/subirimagen1">Subir Imagenes</a></li>
+                    <li><a href="/contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    <section id="contenedor">
+        <p class="encabezado">Paso 7: Sube las imágenes, una vez terminado el proceso, da click en confirmar orden</p>
+        <a class="ruta">Escoge una imagen</a>
+        <a class="slash">/</a>
+        <a class="ruta">Especificación</a>
+        <a class="slash">/</a>
+        <a class="ruta">Tamaño</a>
+        <a class="slash">/</a>
+        <a class="ruta">Alineación</a>
+        <a class="slash">/</a>
+        <a class="ruta">Margen</a>
+        <a class="slash">/</a>
+        <a class="ruta">Extras</a>
+        <a class="slash">/</a>
+        <a class="ruta_on">Subir imágenes</a>
+        
+        <div class="recontenedordrop">
+        
+            <div class="dropArea">
+                <div id="myId" class="dropzone"> </div>
+            </div>
+            <hr>
+            <div class="col3">
+                <div class="col5">
+                    <div class="droptable1">Nombre de Especificación</div>
+                    <div class="droptable2"><%= namespec %></div>
+                </div>
+                <div class="col5">
+                    <div class="droptable1">Imágenes</div>
+                    <div id="imageCount" class="droptable2">0</div>
+                </div>
+                <div class="col5">
+                    <div class="droptable1">Precio por Imagen</div>
+                    <div class="droptable2">$ <%= totalprice %></div>
+                    <!-- <input id="ntotalprice" type="hidden" value= <%= totalprice %>> -->
+                </div>
+                <div class="col5">
+                    <div class="droptable1">Costo Total</div>
+                    <p class="droptable2">USD<span class="droptable3">$ <span id="ntotalpay" class="droptable3">9.99 </span></span></p>
+                </div>
+            </div>
+                    <div class="picnum2">El proceso de subida de imágenes puede tardar algunos minutos, ten paciencia</div>
+        </div>
+        <hr>
+        <div class="button2">
+            <a id="buttoncontorder">Confirmar Orden</a>
+        </div>
+        <form id = "orderForm" class="" action="/neworder" method="post">
+            <input type="hidden" name="imagelist" placeholder="" value=""><br>
+        </form>
+        
+    </section>
+        <aside id="menurigth">
+            <p class="encabezado"> Tutorial</p>
+             <div class="video_med"><a onclick="ponleplay()" href="#openVideoModal"><img src="../images/tumbnail_video.jpg" width="140px"></a></div>
+            <hr>
+            <p class="encabezado"> FAQs</p>
+            <p><a class="texto_plano">1. ¿Están seguros mis datos?</a></p>
+            <p><a class="texto_plano">2. ¿Tiempo de Entrega?</a></p>
+            <p><a class="texto_plano">3. ¿Prueba Gratis?</a></p>
+            <p><a class="texto_plano">4. ¿Cómo Pago?</a></p>
+            <div class="button1">
+            <a href="/faq">Ver más</a> 
+            </div>
+        </aside>
+        <input id="s3bucketnameid" type="hidden" value=<%= S3_BUCKET_NAME %>>
+        <input id="specid" type="hidden" value=<%= specid %>>
+        <input id="totalpriceid" type="hidden" value=<%= totalprice %>>
+    </body>
 </html>
