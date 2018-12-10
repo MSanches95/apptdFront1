@@ -1,0 +1,1387 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: helvetica, arial, sans-serif;
+}
+
+html {
+    background: #E5E5E5 no-repeat center center fixed;
+    background-size: cover;
+    min-width: 850px;
+    height: 100%;
+}
+
+#menuver {
+    padding: 0;
+    margin-top: 0px;
+    width: 160px;
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+
+#menuver ul{
+    height: 100%;
+    position: fixed;
+    width: 160px;
+    background-color: #000000;
+    margin-top: 0px;
+    z-index: 88888;
+}
+
+#menuver ul li:first-child {
+    background-color: #E5E5E5;
+    height: 110px;
+    width: 160px;
+}
+
+#menuver ul li:first-child:hover {
+    background-color: #CCC;
+    padding-left: 0px;
+    text-align: center;
+}
+
+#menuver h1 {
+    text-align: center;
+    transition: .2s;
+}
+
+#menuver li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #FFFFFF;
+    display: block;
+    padding: 10px;
+    transition: .2s;
+}
+
+#menuver li:hover{
+    background-color: red;
+    padding-left: 20px;
+    transition: .2s;
+}
+
+.bienvenida {
+    float: right;
+    text-align: right;
+    font-size: 12px;
+    width: 80%;
+    min-width: 400px;
+    height: 40px;
+    padding-top: 20px;
+    margin-top: 0px;
+    margin-right: 10px;
+    display: inline-block;
+    border-bottom: 2px #CCC solid;
+    -webkit-border-image: 
+      -webinear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+    -moz-border-image:
+      -moz-linear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+    border-image:
+        linear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+}
+
+.bienvenida ul{
+    list-style: none;
+    height: 40px;
+    
+}
+
+.bienvenida li{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.bienvenida li a{
+    color: #000000;
+}
+
+#salir:hover {
+    color: #999999;
+}
+
+#contenedor{
+    float: left;
+    margin-left: 200px;
+    margin-top: 60px;
+    display: inline-block;
+    max-width: 57%;
+    min-width: 620px;
+}
+
+.encabezado {
+    font-size: 28px;
+    padding: 10px 5px;
+}
+
+.texto_plano {
+    font-size: 12px;
+}
+
+table {
+    color: #000000;
+    border-collapse: collapse;
+    min-width: 400px;
+    width: 100%;
+}
+
+.tabla{
+    margin-top: 0px;
+    padding: 10px;
+}
+
+tr:first-child:hover {
+    background: none;
+}
+
+tr {
+    transition: .2s;
+}
+
+tr:hover {
+    background-color: #CCC;
+    transition: .3s;
+}
+
+th, td{
+    padding: 5px;
+}
+
+th {
+    text-decoration: none;
+    font-size: 10px;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 1px #CCC solid;
+    -webkit-border-image: 
+      -webinear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+    -moz-border-image:
+      -moz-linear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+    border-image:
+        linear-gradient(to left, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 0 0 100%;
+}
+
+td {
+    font-size: 14px;
+    height: 16px;
+}
+
+.undone {
+    color: #00a0ff;
+}
+
+.none {
+    color: red;
+}
+
+hr {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0));
+}
+
+#icontable {
+    margin-right: 5px;
+    transition: .2s;
+}
+
+#icontable:hover {
+    opacity: .5;
+}
+
+#menurigth {
+    width: 180px;
+    margin-top: 60px;
+    float: right;
+    display: inline-block;
+    height: 100%;
+    padding-left: 20px;
+    border-width: 2px 2px 2px 2px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.button1 a{
+    border: 2px solid;
+    border-color: #000000;
+    color: #000000;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: .1s;
+    margin-top: 30px;
+}
+
+.button2 a{
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: .1s;
+    float: right;
+}
+
+#micuenta{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.col1, .col2, col3{
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.col2 {
+    margin-left: 20px;
+}
+
+#micuenta label{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+#micuenta input{
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    width: 180px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#area_botones {
+    width: auto;
+    height: 40px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#area_botones div{
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-left: 12px
+}
+
+.buttonblue a{
+    height: 20px;
+    background-color: #00A0FF;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .1s;
+    float: right
+}
+
+.buttonblue img {
+    margin-right: 10px;
+}
+
+.especificaciones_form{
+    padding: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.label {
+    display: inline-block;
+    width: 133px;
+    height: 95px;
+    margin-left: 400px;
+    position: absolute;
+    margin-top: 70px;
+    background: url(../images/label.svg);
+    background-size: cover;
+    text-align: center;
+}
+
+.texto_precio {
+    color: #FFFFFF;
+    font-size: 36px;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.texto_plano4{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.especificaciones_form label {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.especificaciones_form input {
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.margin {
+    max-width: 40px;
+    padding-right: 5px;
+    padding-left: 5px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.especificaciones_form select {
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.postinput{
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.ruta_on{
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.ruta{
+    padding: 5px;
+    display: inline-block;
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.slash{
+    display: inline-block;
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.picnum {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.picnum2 {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    float: left;
+    padding: 2px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.columna {
+    display: inline-block;
+    border: 2px solid #000000;
+    width: 130px;
+    height: 100px;
+    padding: 20px;
+    margin-top: 50px;
+    vertical-align: bottom;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000000;
+    transition: .2s;
+    margin-right: 20px;
+}
+
+.columna:hover{
+    z-index: 100;
+    background-color: #00BFFF;
+    color: #FFFFFF;
+    border: 2px solid #00BFFF;
+    transition: .3s;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.2);
+}
+
+.encabezado2 {
+    font-size: 20px;
+}
+
+.texto_plano2{
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.texto_plano3{
+    font-size: 10px;
+    font-style: italic;
+    color: red;
+    margin-top: 20px;
+    transition: .2s;
+}
+
+#colok .encabezado2{
+    color: r
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#colok:hover {
+    background-color: red;
+    border: 2px solid red;
+}
+
+#colok:hover p{
+    color: #FFFFFF;
+    transition: .3s;
+}
+
+.buttonback a{
+    border: 2px solid;
+    border-color: #000000;
+    color: #000000;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: left;
+    transition: .2s;
+    margin-top: 0px;
+}
+
+.buttonback a:hover, .buttoncont a:hover, .button1 a:hover, .button2 a:hover, .buttonblue:hover, .button4 a:hover, .buttonblue2 a:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.2);
+    transition: .3s;
+}
+
+.buttoncont a{
+    background: #00A0FF;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+    transition: .2s;
+    margin-top: 0px;
+}
+
+.recontenedor {
+    position:relative;
+    min-height: 150px;
+    border: 3px solid #000;
+    padding: 20px 20px;
+    max-width: auto;
+    height: 240px;
+    min-width: 570px;
+}
+
+.recontenedor form{
+    display: block;
+    text-decoration: none;
+    /*height: 240px;*/
+}
+
+.recontenedor label {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.recontenedor input {
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+.recontenedor select {
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[name="DPI"] {
+    width: 38px;
+    text-align: right;
+    margin-right: 5px;
+}
+
+input, select {
+    outline-color: #555555;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.checkcheck{
+    max-width: 20px;
+}
+
+.postcheck{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+:-moz-placeholder {color: #BBBBBB; font-size: 12px; font-style: italic; font-weight: normal;}
+::-webkit-input-placeholder {color: #BBBBBB; font-size: 12px; font-style: italic; font-weight: normal;}
+
+
+#cuadro1, #cuadro2, #cuadro3, #cuadro4, #cuadro5, #cuadro6, #cuadro7 {
+    display: none;
+}
+
+#sizeForm label, #imageForm label {
+    font-size: 16px;
+}
+
+.cuadro {
+    width: 26%;
+    height: 80px;
+    background: #BBBBBB;
+    padding: 1px 3px;
+    display: inline-block;
+    text-align: center;
+    line-height: 80px;
+    transition: .2s;
+    color: #FFFFFF;
+    margin: 10px;
+    border: 2px solid #BBBBBB;
+    position: relative;
+}
+
+.cuadro:hover {
+    background-color: #00BFFF;
+    border: 2px solid #00BFFF;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.2);
+    transition: .3s;
+}
+
+#cuadro1:checked + label, #cuadro2:checked + label, #cuadro3:checked + label, #cuadro4:checked + label, #cuadro6:checked + label, #cuadro7:checked + label {
+    line-height: 80px;
+    background: none;
+    color:  #00BFFF;
+    border: 2px solid #00BFFF;
+}
+
+.cuadro[name="cuadrounder"] {
+    width: 26%;
+    height: 80px;
+    background: none;
+    padding: 1px 3px;
+    display: inline-block;
+    text-align: left;
+    line-height: 1px;
+    transition: .2s;
+    color: #FFFFFF;
+    margin: 10px;
+    border: 2px solid #BBBBBB;
+    position: absolute;
+}
+
+.cuadro[name="cuadrounder"] label, .cuadro[name="cuadrounder"] input {
+    font-size: 12px;
+    width: 50px;
+    color: #000;
+}
+
+#cuadro5:checked + label {
+    visibility: hidden;
+    background: none;
+    color: rgba (0,0,0,0)
+    transition: 5s;
+}
+
+.imagebox {
+    height: 65%;
+    vertical-align: middle;
+    padding: 10px;    
+}
+
+.radio {
+    max-width: 20px;
+}
+
+#alignForm1 {
+    padding-right: 20px;
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#marco {
+    width: 300px;
+    height: 200px;
+    border: 2px solid #999999;
+    position: relative;
+}
+
+.alignHorizontalC {
+    text-align: center;
+}
+
+.alignHorizontalL {
+    text-align: left;
+}
+
+.alignHorizontalR {
+    text-align: right;
+}
+
+#portatenis{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;
+}
+
+.alignVerticalM {
+    vertical-align: middle;
+}
+
+.alignVerticalT {
+    vertical-align: top;
+}
+
+.alignVerticalB {
+    vertical-align: bottom;
+}
+
+#marginForm1{
+    padding-right: 20px;
+    border-width: 0px 2px 0px 0px;
+    border-style: solid;
+    border-image: linear-gradient(to top, rgba(0, 0, 0, 0), #CCCCCC, rgba(0, 0, 0, 0)) 1 100%;
+}
+
+#tenis {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+.vertLine1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-left: 2px solid #00BFFF;
+    margin-left: 20px;
+}
+
+.vertLine2 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-right: 2px solid #00BFFF;
+    margin-left: -20px;
+}
+
+.horLine1 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-top: 2px solid #00BFFF;
+    margin-top: 20px;
+}
+
+.horLine2 {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    border-bottom: 2px solid #00BFFF;
+    margin-top: -20px;
+}
+
+
+#cuadroxtra1, #cuadroxtra2, #cuadroxtra3, #cuadroxtra4, #cuadroxtra5 {
+    display: none;
+}
+
+#extraForm label {
+    font-size: 16px;
+}
+
+.cuadroxtra {
+    text-decoration: none;
+    width: 19%;
+    height: 80px;
+    background: #BBBBBB;
+    padding: 1px 3px;
+    display: inline-flex;
+    transition: .2s;
+    color: #FFFFFF;
+    vertical-align: top;
+    margin: 10px;
+    border: 2px solid #BBBBBB;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cuadroxtra:hover {
+    background-color: #00BFFF;
+    border: 2px solid #00BFFF;
+    box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.2);
+    transition: .3s;
+}
+
+#cuadroxtra1:checked + label, #cuadroxtra2:checked + label, #cuadroxtra3:checked + label, #cuadroxtra4:checked + label,#cuadroxtra5:checked + label {
+    background: none;
+    color:  #00BFFF;
+    border: 2px solid #00BFFF;
+}
+
+.col3{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.col4 {
+    margin-top: 10px;
+    width: 400px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: bottom;
+    position: relative;
+    float: left;
+}
+
+.labelito {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 120px;
+    height: 85px;
+    position: relative;
+    background: url(../images/label.svg);
+    background-size: 120px 85px;
+    text-align: center;
+    float: right;
+}
+
+.texto_precio2 {
+    color: #FFFFFF;
+    font-size: 26px;
+    padding: 2px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.prefixmoney {
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 2px;
+    font-weight: bold;
+}
+
+.texto_plano4{
+    color: #FFFFFF;
+    font-size: 10px;
+    font-style: italic;
+    padding: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+
+/* ESTE ES EL ESTILO PARA EL MODAL */
+
+.modalDialog {
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog > div {
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 20px 20px;
+    background: #000000;
+}
+
+.modalDialog .encabezado {
+    text-align: center;
+}
+
+.modalDialog hr {
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #555555, rgba(0, 0, 0, 0));
+}
+
+.modalDialog ul {
+    width: 250px;
+    display: inline-block;
+    list-style-type: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: top;
+}
+
+.modalDialog li {
+    padding: 12px;
+    position: relative;
+}
+
+.etiquetasxtras {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.postextra {
+    display: inline-block;
+    padding: 5px 8px;
+    font-size: 14px;
+}
+
+.extreprefix{
+    font-size: 8px;
+    margin-right: 4px;
+}
+
+.modalDialog :-moz-placeholder {color: #333333; font-size: 14px; font-style: italic;}
+.modalDialog ::-webkit-input-placeholder {color: #333333; font-size: 14px; font-style: italic;}
+
+.modalDialog input {
+    padding: 5px 8px;
+}
+
+.infomodal {
+    display: inline-block;
+    width: 220px;
+    height: 150px;
+    margin: 0px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.texto_plano_modal {
+    display: inline-block;
+    padding: 10px;
+    font-size: 12px;
+    width: 200px;
+    height: 130px;
+    border: 1px dashed #555;
+}
+
+.buttonModal a{
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    float: right;
+    margin: 10px 37%;
+    cursor: pointer;
+    width: 100px;
+    height: auto;
+    position: absolute;
+}
+
+.modalDialog input:focus {
+    outline-color: #555555;
+}
+
+.close {
+    background: #000000;
+    color: #FFFFFF;
+    border: 2px solid;
+    border-color: #FFFFFF;
+    line-height: 24px;
+    position: absolute;
+    right: -10px;
+    text-align: center;
+    top: -7px;
+    width: 24px;
+    text-decoration: none;
+    font-size: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 24px;
+}
+
+#res_message {
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.dropArea {
+    max-height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    display: inline-block;
+}
+
+.recontenedordrop {
+    min-height: 150px;
+    border: 3px solid #000;
+    max-width: auto;
+    min-width: 570px;
+    position: relative;
+}
+
+.recontenedordrop hr {
+    margin-top: 0px;
+}
+
+.droptable1 {
+    font-size: 10px;
+    text-decoration: none;
+    text-align: left;
+    display: inline-block;
+}
+
+.droptable2 {
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    width: 200px;
+/*    margin-bottom: 10px;*/
+    margin-bottom: 2px;
+    text-align: left;
+    display: inline-block;
+}
+
+.droptable3 {
+    font-size: 26px;
+    vertical-align: bottom;
+}
+
+.picnumdrop {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    float: right;
+    padding: 2px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.col5 {
+    width: 120px;
+    text-align: left;
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 20px;
+    vertical-align: top;
+}
+
+.contactForm, .factForm {
+    padding: 10px;
+}
+
+.contactForm select {
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#confirmOrder {
+    width: 100%;
+    height: 100%;  
+}
+
+#confirmOrder label{
+    font-size: 10px;
+    text-decoration: none;
+}
+
+input[name="checkcheck"] {
+    max-width: 20px;
+}
+
+#confirmOrder input{
+    text-decoration: none;
+    background: none;
+    font-size: 12px;
+    width: 180px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.col6 {
+    padding: 10px;
+    margin-top: 10px;
+    width: 40%;
+    margin-left: 0px;
+    position: relative;
+    float: left;
+}
+
+.factForm select {
+    background: none;
+    font-size: 12px;
+    font-weight: bold;
+    width: 160px;
+    margin-bottom: 8px;
+}
+
+.label2 {
+    margin-top: 10px;
+    margin-right: 20px;
+    display: inline-block;
+    width: 160px;
+    height: 85px;
+    position: relative;
+    background: url(../images/label2.svg);
+    background-size: 160px 85px;
+    text-align: center;
+    float: right;
+}
+
+#thankyou {
+    text-align: center;
+    
+}
+
+.button4 a{
+    background-color: red;
+    color: #FFFFFF;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.numeroorden {
+    font-size: 26px;
+    color: #00A0FF;
+    font-weight: bold;
+}
+
+.saludo {
+    width: 45%;
+    display: inline-block;
+}
+
+.textobold {
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+#logomini{
+    width: 60px;
+    margin: 20px;
+    display: inline-block;
+}
+
+.recontenedordownload {
+    min-height: 150px;
+    border: 3px solid #000;
+    padding: 2px 2px;
+    max-width: auto;
+    min-width: 570px;
+    position: relative;
+}
+
+.imageArea {
+    max-height: 200px;
+    width: 100%;
+    position: relative;
+    overflow: auto;
+    display: inline-block;
+    height: 200px;
+}
+
+.buttonblue2 a{
+    height: 20px;
+    background-color: #00A0FF;
+    color: #FFFFFF;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .1s;
+}
+
+.texto_calidad {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.texto_calidad_mail {
+    margin: 5px;
+    font-style: italic;
+}
+
+.texto_calidad_mail a {
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+}
+
+.contModal {
+    padding: 20px;
+    text-align: center;
+}
+/*clases para status*/
+
+.porpagar{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: red;
+    transition: .3s
+}
+
+.entregado{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    transition: .3s
+}
+
+.enproceso{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00A0FF;
+    transition: .3s
+}
+
+.terminado{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    color: #40FF00;
+    transition: .3s
+}
+
+.porpagar:hover, .entregado:hover, .enproceso:hover, .terminado:hover {
+    color: #999;
+    transition: .3s
+}
+
+#colorselect {
+    background-color: #e5e5e5;
+    color: #E5E5E5;
+    width: 20px;
+    border: none;
+}
+
+.textoplanotemp {
+    font-style: italic;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+.textopreciotemp {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.prefijopeso {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.textoplanotemp2 {
+    margin-top: 14px;
+    font-style: italic;
+    font-size: 6px;
+    font-weight: bold;
+}
+
+.textopreciotemp2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.prefijopeso2 {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.droptable4 {
+    text-decoration: none;
+    background: none;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: left;
+    display: inline-block;
+}
+
+.droptable5 {
+    text-decoration: none;
+    background: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    text-align: left;
+    display: inline-block;
+}
+
+#facturacion1 {
+    display: none;
+}
+
+#facturacion1.want{
+    display: block;
+}
+
+#facturacion2 {
+    display: none;
+}
+
+#facturacion2.want {
+    display: inline-block;
+}
+
+#facturacion3 {
+    display: none;
+}
+
+#facturacion3.want {
+    display: inline-block;
+}
+
+#hrfac {
+    display: none;
+}
+
+#hrfac.want {
+    display: inline-block;
+}
+
+textarea{
+    width:400px;
+    height:100px;
+    border: 2px solid red;
+    font-size:16px;
+    font-weight: 600;
+    margin-left:10%; 
+    }
+
+
+
+.SliderRGB {
+     position:absolute;    
+     left:40%;
+     top:10%;
+     width: 80%;
+     height: 100%;
+     border: 2px slategray;
+}
+
+#displayRGB {
+
+    width: 65%;
+    height: 40px;
+    background: #FFFFFF;
+    margin-top: 10px;
+    border: 3px solid #000;
+}
+
+.SliderCMYK {
+
+      position:absolute;    
+     left:40%;
+     top:10%;
+     width: 80%;s
+     height: 100%;
+     border: 2px slategray;
+     display:none;     
+}
+
+#displayCMYK {
+    width: 65%;
+    height: 40px;
+    background: #ffffff;
+    margin-top: 10px;
+    border: 3px solid #000;
+}
