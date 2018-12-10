@@ -2,7 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>the background remover</title>
+        <title>upload files</title>
         <link rel="stylesheet" href="../stylesheets/imgncss_session.css">
         <link rel="stylesheet" href="../stylesheets/dropzone.css">
         <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico"/>
@@ -15,41 +15,18 @@
     <body>
         <header class="bienvenida">
             <ul>
-                <li>Hola <a id="user" class="bold"><%= user.userlongname %></a><a class="bold">!</a></li>
-                <li>Órdenes en Proceso <a id="orders" class="bold"><%= countorders %></a></li>
-                <li><a id="salir" class="bold" href="/logout">Salir</a></li>
+                <li>Hola rentadora</li>
             </ul>
         </header>
         <section id="menuver">
             <nav>
                 <ul>
-                    <li class="menulogo"><h1><a href="/principal"><img src="../images/logo_black.png" alt="logo"></a></h1></li>
-                    <li><a href="/micuenta">Mi Cuenta</a></li>
-                    <li><a href="/historial">Historial</a></li>
-                    <li><a href="/especificaciones1">Especificaciones</a></li>
-                    <li><a href="/subirimagen1">Subir Imagenes</a></li>
-                    <li><a href="/contacto">Contacto</a></li>
+                   
                 </ul>
             </nav>
         </section>
-    <section id="contenedor">
-        <p class="encabezado">Paso 7: Sube las imágenes, una vez terminado el proceso, da click en confirmar orden</p>
-        <a class="ruta">Escoge una imagen</a>
-        <a class="slash">/</a>
-        <a class="ruta">Especificación</a>
-        <a class="slash">/</a>
-        <a class="ruta">Tamaño</a>
-        <a class="slash">/</a>
-        <a class="ruta">Alineación</a>
-        <a class="slash">/</a>
-        <a class="ruta">Margen</a>
-        <a class="slash">/</a>
-        <a class="ruta">Extras</a>
-        <a class="slash">/</a>
-        <a class="ruta_on">Subir imágenes</a>
-        
+    <section id="contenedor">      
         <div class="recontenedordrop">
-        
             <div class="dropArea">
                 <div id="myId" class="dropzone"> </div>
             </div>
@@ -82,23 +59,6 @@
         <form id = "orderForm" class="" action="/neworder" method="post">
             <input type="hidden" name="imagelist" placeholder="" value=""><br>
         </form>
-        
     </section>
-        <aside id="menurigth">
-            <p class="encabezado"> Tutorial</p>
-             <div class="video_med"><a onclick="ponleplay()" href="#openVideoModal"><img src="../images/tumbnail_video.jpg" width="140px"></a></div>
-            <hr>
-            <p class="encabezado"> FAQs</p>
-            <p><a class="texto_plano">1. ¿Están seguros mis datos?</a></p>
-            <p><a class="texto_plano">2. ¿Tiempo de Entrega?</a></p>
-            <p><a class="texto_plano">3. ¿Prueba Gratis?</a></p>
-            <p><a class="texto_plano">4. ¿Cómo Pago?</a></p>
-            <div class="button1">
-            <a href="/faq">Ver más</a> 
-            </div>
-        </aside>
-        <input id="s3bucketnameid" type="hidden" value=<%= S3_BUCKET_NAME %>>
-        <input id="specid" type="hidden" value=<%= specid %>>
-        <input id="totalpriceid" type="hidden" value=<%= totalprice %>>
     </body>
 </html>
