@@ -7,6 +7,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { HttpModule } from '@angular/http'; // Muy importante
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { UploadPage } from '../pages/upload/upload';
 import { AuthProvider } from '../providers/auth/auth';
 import { TodosProvider } from '../providers/todos/todos';
 
@@ -54,7 +55,8 @@ import { SignupPage } from '../pages/signup/signup';
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    UploadPage
   ],
   imports: [
     BrowserModule,
@@ -67,7 +69,8 @@ import { SignupPage } from '../pages/signup/signup';
     MyApp,
     HomePage,
     LoginPage,
-    SignupPage
+    SignupPage,
+    UploadPage
   ],
   providers: [StatusBar,
     SplashScreen,
