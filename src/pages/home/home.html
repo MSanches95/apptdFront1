@@ -12,5 +12,12 @@
     The Dresser <a href="http://thedresser.com.mx">Click aquí</a>.
   </p>
   <button ion-button full (click)="logout()" color="primary" class="logout-button">Cerrar Sesión</button>
-  <button ion-button full (click)="upload()" color="primary" class="upload-button">Cargar archivos</button>
+  
+
+  <ion-row>
+    <ion-col>
+        <button ion-button full (click)="launchSignup()" class="create-account">REGISTRO</button>
+        <button ion-button full (click)="upload()" color="primary" class="upload-button">Cargar archivos</button>
+    </ion-col>
+</ion-row>
 </ion-content>
